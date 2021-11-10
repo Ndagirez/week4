@@ -1,0 +1,62 @@
+<!--ARITHMETIC OPERATIONS AND OPERATORS-->
+<!DOCTYPE HTML>
+<html>
+    <head><title>element by method</title>
+    </head>
+    <body>
+       <P>Arithmetic operators perform arithmetic on numbers</P>
+       <!--for both literals and variables-->
+       <h1>precedence</h1>
+       <p>Describes order in which operations are performed in arithmetic operations</p>
+       <!--adding-->
+       <p id="one"></p>
+         <script>
+             var x = 7,
+             y = 3,
+             z = x + y;
+             document.getElementById("one").innerHTML= z;
+
+       
+         </script>
+         <!--subtraction-->
+         <p id="two"></p>
+         <script>
+            var x = 7,
+            y = 3,
+            z = x - y;
+            document.getElementById("two").innerHTML= z;
+
+
+        </script>
+
+        <!--multiplication-->
+        <p id="three"></p>
+            <script>
+                var l = 7,
+                m = 3,
+                n = l * m;
+                document.getElementById("three").innerHTML= n;
+            </script>
+
+       <!--increamenting-->
+       <p id="four"></p>
+        <script>
+            var l = 7;
+            l++ ;
+            var m=l
+            document.getElementById("four").innerHTML= m;
+        </script>
+
+         
+ <!--precedence-->
+       <p id="five"></p>
+       <script>
+          var l = (800*50) + 600;
+         
+          document.getElementById("five").innerHTML= l;
+       </script>
+         
+
+    </body>
+    
+</html>

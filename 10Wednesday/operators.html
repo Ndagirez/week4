@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--operators-->
+<html>
+    <head>
+        <title>operators</title>
+    </head>
+   <body>
+      <p>operator assigns values to variables and adds them together</p>  
+      <p>they include +,-,--,*,**,++,/,% and many others</p>
+      <p>the equal to operator is ==</p>
+      <!--assigning values to variables and addind them using operators-->
+      <p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = 5;
+            var y = 2;
+            var z = x + y;
+             document.getElementById("demo").innerHTML = z;
+        </script>
+
+        <!--subtracting values using operators-->
+        <p id="one"></p>
+
+        <script>
+            var A = 5;
+            var B = 2;
+            var C = A - B;
+            document.getElementById("one").innerHTML = C;
+
+        </script>
+        <!--using a different assigning operator-->
+
+        <p id="two"></p>
+
+        <p id="two"></p>
+
+            <script>
+                var x = 10;
+                x += 5;
+                document.getElementById("two").innerHTML = x;
+            </script>
+
+        <p>string operators</p>
+        <!--adding strings using operators-->
+        <p id="three"></p>
+            <script>
+                txt1 = "mariam";
+                txt2 = "Ndagire";
+                txt3 = txt1 +""+ txt2;
+                document.getElementById("three").innerHTML= txt3;
+
+            </script>
+
+        <p id="four"></p>
+        <script>
+         txt = "mariam";
+         txt += "Ndagire";
+        
+         document.getElementById("four").innerHTML= txt;
+
+        </script>
+
+        <p>you can also use logical operators which include &,!,||</p>
+
+        <p>typeof operator</p>
+        <p>shows the type of data you are handling</p>
+        
+
+    </body>
+</html>

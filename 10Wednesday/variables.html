@@ -1,0 +1,83 @@
+<!--how to creat and name variables-->
+<!DOCTYPE HTML>
+<html>
+    <head><title>variables</title>
+    </head>
+    <body>
+        <p>variables</p>
+        <!--variables are containers for storing data values-->
+       <!--one statement one variable-->
+       <p id = "one"></p>
+       <script>
+           var carName = "volvo";
+           document.getElementById("one").innerHTML= "volvo"
+
+       </script>
+       <!--one statement many variables-->
+       <p id="two"></p>
+       <script>
+           var person ="mariam",carName="BMW", price="3000";
+           //we separate them with commas
+           document.getElementById("two").innerHTML = price;
+          
+       </script>
+        <!--one statement many variables on many lines-->
+        <p id="three"></p>
+        <script>
+            var person ="mariam",
+            carName="BMW", 
+            price="3000";
+            //we separate them with commas
+            document.getElementById("three").innerHTML = person;
+           
+        </script>
+        <!--undefined value-->
+        <p id="four"></p>
+         <script>
+            var x;
+            document.getElementById("four").innerHTML = x;
+            //x is undefined
+           
+        </script>
+          <!--re declaring values-->
+          <p id="five"></p>
+          <script>
+             var y;
+             var y;
+             document.getElementById("five").innerHTML = y;
+          //re declaring the variable doesnt change its value  
+         </script>
+
+       
+         <!--adding numbers using arithmetic operations under variavles-->
+         <p id="six"></p>
+         <script>
+             var z = 5 + 5 + 6;
+             
+            document.getElementById("six").innerHTML = z ;
+         </script>
+         
+          <!--adding strings using arithmetic operations under variables-->
+          <p id="seven"></p>
+          <script>
+              var cat= "mariam"+""+"ndagire";
+              //variable name can be any name of something as long as not a keyword
+             document.getElementById("seven").innerHTML =cat ;
+          </script>
+
+        <!--adding strings and numbers in  arithmetic operations varianles-->
+          <p id="eight"></p>
+          <script>
+              var m= "mariam" + 5;
+              //adding a string on a number results into a string
+              //a number put in quotes becomes a string
+              
+             document.getElementById("eight").innerHTML =m ;
+          </script>
+ 
+       
+
+
+    </body>
+    
+</html>
