@@ -1,0 +1,71 @@
+<!--java script syntax-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>java syntax</title>
+    </head>
+    <!--syntax is a set of rules which have to be followed when writing javascript programs -->
+    <body>
+        
+        <!--values-->
+        <!--fixed values/literals -->
+        <p id="demo"> </p>
+        <script>
+           //numbers are written with or without decimals 
+        document.getElementById("demo").innerHTML=10.50;
+        </script>
+        <!--strings-->
+        <p id="one"></p>
+        <script>
+            document.getElementById("one").innerHTML='mariam ndagire';
+            //strings are put in single or double quotes
+        </script>
+
+       <p>variables </p>
+        <!--these are used to store data-->
+        <!--var keyword is used to declare variables-->
+        <!--an equal sign assigns the values to variables-->
+        <!--operators are used to compute values example =,+,-,/-->
+        <!--expression-->
+        <!--combination of values ,operators ,variables that evaluate to a statement-->
+        
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("demo").innerHTML = 5 * 10;
+        </script>
+
+        <p id="two"></p>
+        <script>
+            var x,y,z;//declare variables
+            x = 5; y = 6; z = 5;//assign values to variables
+            c = x + y + z;//compute the answer through this formular by assigning x,y and z sum to c
+            document.getElementById("two").innerHTML=c //write answer inside html as c
+        </script>
+        <!--comments in js-->
+        <script>
+            //this is single line comment
+            /*this is multiline comment*/
+        </script>
+        <p>js identifiers</p>
+        <!--names for identifying variable-->
+        <!--you  cant  use keywords as identifiers-->
+        <!--underscore ,letters,and dolar signs are used to creat variable names-->
+        <p>we use camel case to  name identifiers</p>
+        <p>Hyphens are reserved for subtraction</p>
+
+        <p id="demo"></p>
+
+        <script>
+        var lastname, lastName;
+        lastName = "Doe";
+        lastname = "Peterson";
+        document.getElementById("demo").innerHTML = lastName;
+        </script>
+
+
+
+
+    </body>
+    
+</html>
