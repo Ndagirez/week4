@@ -1,0 +1,59 @@
+<!--functions-->
+<!DOCTYPE HTML>
+<html>
+    <head><title>functions</title>
+    </head>
+    <body>
+        <h1 id="one"> This is java script</h1>
+       <!--performs a multipliaton and  returns value-->
+        <script>
+          function myFunction(p1, p2) {
+            return p1 * p2;
+          }
+          document.getElementById("one").innerHTML = myFunction(4, 3);
+          </script>
+
+            <p id="two"></p>
+
+            <script>
+              var x = myFunction(4, 3);                       //function is called
+              document.getElementById("two").innerHTML = x;
+
+              function myFunction(a, b) {   //returns product to 
+                return a * b;
+            }
+                
+            </script>
+           <p id="three"></p>
+
+           <script>
+                document.getElementById("three").innerHTML =
+                "The temperature is " + toCelsius(77) + " Celsius";
+                
+                function toCelsius(fahrenheit) {
+                  return (5/9) * (fahrenheit-32);
+           } 
+           </script>
+
+           <h1> local variables</h1>
+           
+           <p id="demo1"></p>
+
+            <p id="demo2"></p>
+
+            <script>
+            myFunction();
+
+            function myFunction() {
+              var carName = "Volvo";
+              document.getElementById("demo1").innerHTML =
+              typeof carName + " " + carName;
+            }
+
+            document.getElementById("demo2").innerHTML =
+            typeof carName;
+            </script>
+
+    </body>
+    
+</html>

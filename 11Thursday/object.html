@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--objects-->
+<html>
+    <head>
+        <title>objects</title>
+    </head>
+    <h1>one value one variable</h1>
+    <p id="one"></p>
+
+        <script>
+            // Create and display a variable:
+            var car = "Fiat";
+            document.getElementById("one").innerHTML = car;
+        </script>
+
+    <h1>many values to variable car</h1>
+    <p id="two"></p>
+
+       <!--if many values are assigned to a single variable,it becomes an object-->
+        <script>
+            // Create an object:
+            var car = {type:"Fiat", model:"500", color:"white"};
+
+            // Display some data from the object:
+            document.getElementById("two").innerHTML = "The car type is " + car.type;
+        </script>
+        <!--accesing properties of an object-->
+        <p id="three"></p>
+        <p id="demo"></p>
+
+        <script>
+            // Create an object:
+            var car = {type:"Fiat", model:"500", color:"white"};
+
+            // Display some data from the object:
+            //objectname.proprty or objectname["property"]
+            document.getElementById("demo").innerHTML = car.type +"<br>" + car.color;
+        </script>
+
+    <p>An object method is a function definition, stored as a property value.</p>
+
+    <p id="demo"></p>
+    <!--this is a keyword and shows the owner of the function-->
+
+        <script>
+            // Create an object:
+            var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id     : 5566,
+            fullName : function() {
+                return this.firstName + " " + this.lastName;//full name is the owner of the function
+        }
+        };
+        // Display data from the object:
+        document.getElementById("demo").innerHTML = person.fullName();
+        </script>
+            
+    
+     <body>
+       
+
+    </body>
+</html>

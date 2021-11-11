@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--javascript data types-->
+<html>
+    <head>
+        <title>Data types</title>
+    </head>
+        <p>java script variables store diffent data types</p>
+        <script>
+            var x = 38;                                 //this a number
+            var y = "mariam"                           //this is a string
+            var p = {carName:"volvo",person: "mariam"} //object
+        </script>
+        <p>adding numbers to strings evaluates an expression to a string</p>
+        <p id="one"></p>
+        <script>
+            var z = 16 +"volvo" ;
+            
+            //javascript statements are evaluated from left to right
+            //a string added onto a number evaluates to a string
+            //strings are put in double or single quotes
+            document.getElementById("one").innerHTML = z;
+        </script>
+
+        <p id="two"></p>
+        <script>
+            var z = "volvo" + 16 + 4 ;
+            
+            //javascript statements are evaluated from left to right
+            //a string added onto a number evaluates to a string
+            //strings are put in double or single quotes
+            document.getElementById("two").innerHTML = z;
+        </script>
+
+        <p id="three"></p>
+            <script>
+            var z =   16 + 4 + "volvo" ;
+
+            //javascript statements are evaluated from left to right
+            //a string added onto a number evaluates to a string
+            //strings are put in double or single quotes
+            document.getElementById("three").innerHTML = z;
+        </script>
+
+        <!--redeclaring of values to same variable-->
+        <p id="four"></p>
+        <script>
+            var x;                                      //x is undefined here
+            var x = 38;                                 //this a number
+            var x = "mariam ndagire"                    //x is now a string
+            document.getElementById("four").innerHTML = x ;
+        </script>
+
+        <p>javascript strings</p>
+        <!--they can be put in single or double quotes-->
+        <h1 id = "five"></h1>
+        <script>
+            var myName1 = "mariam";
+            var myName2 = 'Ndagire';
+            document.getElementById("five").innerHTML =
+            myName1 + "<br>"+ myName2;
+            
+        </script>
+        <p>javascript numbers</p>
+        <!--with decimals and without-->
+        <p id="six"></p>
+        <script>
+            var m = 10.55;
+            var n = 10000;
+            document.getElementById("six").innerHTML =
+            m +"<br>"+n
+       </script>
+
+    
+            <p>javascript numbers</p>
+            <!--with decimals and without-->
+            <p id="six"></p>
+            <script>
+                var m = 10.55;
+                var n = 10000;
+                var o = 123e5//big number with exponents
+                document.getElementById("six").innerHTML =
+                m +"<br>" + n + "<br>" + o ;
+            </script>
+
+            <p>javascript boolean</p>
+            <!--boolean-->
+            <p id="seven"></p>
+            <script>
+                var m = 2;
+                var n = 3;
+                var o = 2;
+                (m==o);//returns true
+                (m==n);//returns false
+                document.getElementById("seven").innerHTML= (m==o) + "<br>" + (m==n);
+
+            </script>
+
+            <p>javascript arrays</p>
+            <p id="eight"></p>
+            <script>
+                var houses = ["bangaloo", "hats","tents" ];
+                //we access elements of an arry by there indices
+                document.getElementById("eight").innerHTML = houses[2]; //this gives answer at index 2
+            </script>
+             
+             <p>js objects</p>
+             <p id="nine"></p>
+
+             <script>
+                 var person = {
+                      name: "Mariam",
+                      age: 50,
+                      district: "masaka"
+
+                 };
+
+                 document.getElementById("nine").innerHTML = 
+                 person.name  + "is from " + person.district  +  "and she is " + person.age +  "years of age";
+             </script>
+
+             <h1>typeof </h1>
+             <p>Returns the type of javasript variable</p>
+             <p id="ten"></p>
+             <script>
+                 document.getElementById("ten").innerHTML = 
+               typeof "my name is mariam"+ "<br>"+ 
+               typeof 3.14 + "<br>" +             
+               typeof (5 + 4) + "<br>" + 
+               typeof ("5" + "6");
+               
+             </script>
+             <h1>undefine value</h1>
+               
+               <p id="eleven"></p>
+
+                <script>
+                    var car;
+                    document.getElementById("eleven").innerHTML =
+                    car + "<br>" + typeof car;
+                    //same way an empty value but with quotes is a string type but undefined
+                </script>
+
+               <h1>null value</h1>
+               <p id="twelve"></p>
+               <!--the value type is still an object -->
+               <!--used to empty objects-->
+
+                <script>
+                    var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                    person = null;
+                    document.getElementById("twelve").innerHTML = typeof person;
+                </script>
+                                            
+            
+    
+    </body>
+</html>
