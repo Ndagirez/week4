@@ -1,0 +1,32 @@
+<!--strings-->
+<!DOCTYPE HTML>
+<html>
+    <head><title>string methods</title>
+    </head>
+    <body>
+        <!--property (length)-->
+        <h1 id = "one"></h1>
+       <script>
+           var x = "abcdefghijklmnopq"
+            
+           document.getElementById("one").innerHTML= x.length;
+
+       </script>
+
+       <!--finding string in string-->
+       <h1 id="two"></h1>
+       <script>
+           var str = "my name is 'ndagire' and i live at kagoma";
+           var y = str.indexOf("ndagire");//the idexof gives index of the first position of occurennce of the text you are locating
+           document.getElementById("two").innerHTML= y;
+       </script>
+           <h1 id="three"></h1>
+           <script>
+               var str = "my name is 'ndagire' and i live at kagoma";
+               var y = str.lastindexOf("ndagire");//the lastindexof gives index of the last of occurennce of the text you are locating
+               document.getElementById("two").innerHTML= y;
+            //if both index of and search methods are used to look for position of something in the string which is not there ,they return zero
+           </script>
+    </body>
+    
+</html>
