@@ -1,0 +1,25 @@
+<!--events-->
+<!DOCTYPE HTML>
+<html>
+    <head><title>EVENTS</title>
+    </head>
+    <body>
+        <h1 id="demo"> This is java script</h1>
+        <button type="button" onclick='document.getElementById("demo").innerHTML="hello javacsript"'>click me</button>
+          <!-- on clicking the button,the element with id demo  is changed to hello javascript-->
+
+          <h2 id="one"></h2>
+        <button onclick="displayDate()">this is the date</button>
+
+        <script>
+            function displayDate() {
+              document.getElementById("one").innerHTML = Date();
+            }
+            //on clicking the button,the function displaydate is called which shows the date in the element with id one
+       </script>
+       
+            
+            
+    </body>
+    
+</html>
